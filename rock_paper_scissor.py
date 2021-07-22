@@ -6,11 +6,12 @@ computer_wins = 0
 options = ["rock", "paper", "scissors"]
 
 while True:
-    user_input = input("Type Rock/Paper/Scissors or Q to quit: ").lower()
+    user_input = input("Type Rock/Paper/Scissors or Press Q to quit anytime: ").lower()
     if user_input == "q":
         break
 
     if user_input not in options:
+        print("Invalid input..... Please try again")
         continue
 
     random_number = random.randint(0, 2)
